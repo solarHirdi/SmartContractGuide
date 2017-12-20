@@ -1,0 +1,8 @@
+mixin image(options)
+	- options = options || {};
+
+	.image&attributes(attributes)
+		img(
+			src = options.src || '#'
+			alt = options.alt || ''
+		)
